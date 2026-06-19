@@ -3,20 +3,23 @@
 	"id": "forged_horizon",
 	"version": "${version}",
 	"name": "Forged Horizon",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "This is just a mod for new metal and their uses.",
 	"authors": [
-		"Me!"
+		"SDAMcraft"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/forged_horizon/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
 			"net.sda.forged_horizon.ForgedHorizon"
+		],
+		"client": [
+			"net.sda.forged_horizon.ForgedHorizonClient"
 		],
 		"fabric-datagen": [
 			"net.sda.forged_horizon.ForgedHorizonDataGenerator"

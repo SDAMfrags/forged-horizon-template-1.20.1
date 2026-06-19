@@ -1,0 +1,23 @@
+{
+  "item.forged_horizon.raw_silver" : "Raw Silver",
+  "item.forged_horizon.silver_ingot" : "Silver Ingot",
+  "item.forged_horizon.silver_nugget" : "Silver Nugget",
+
+  "item.forged_horizon.silver_sword" : "Silver Sword",
+  "item.forged_horizon.silver_pickaxe" : "Silver Pickaxe",
+  "item.forged_horizon.silver_axe" : "Silver Axe",
+  "item.forged_horizon.silver_shovel" : "Silver Shovel",
+  "item.forged_horizon.silver_hoe" : "Silver Hoe",
+
+  "item.forged_horizon.silver_helmet" : "Silver Helmet",
+  "item.forged_horizon.silver_chestplate" : "Silver Chestplate",
+  "item.forged_horizon.silver_leggings" : "Silver Leggings",
+  "item.forged_horizon.silver_boots" : "Silver Boots",
+
+  "block.forged_horizon.silver_ore" : "Silver Ore",
+  "block.forged_horizon.raw_silver_block" : "Raw Silver Block",
+  "block.forged_horizon.silver_block" : "Silver Block",
+
+  "itemgroup.forged_horizon" : "Forged Horizon"
+
+}
