@@ -7,7 +7,8 @@ import net.minecraft.recipe.Ingredient;
 import java.util.function.Supplier;
 
 public enum ModToolMaterial implements ToolMaterial {
-    SILVER(200, 5, 1.5f, MiningLevels.IRON, 25, () -> Ingredient.ofItems(ModItems.SILVER_INGOT));
+    SILVER(200, 5, 1.5f, MiningLevels.IRON, 25, () -> Ingredient.ofItems(ModItems.SILVER_INGOT)),
+    STEEL(300, 7.0f, 3.0f, MiningLevels.IRON, 12, () -> Ingredient.ofItems(ModItems.STEEL_INGOT));
 
     private final int itemDurability;
     private final float miningSpeed;

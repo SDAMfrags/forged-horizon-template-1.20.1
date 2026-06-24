@@ -22,7 +22,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.SILVER_ORE)
                 .add(ModBlocks.DEEPSLATE_SILVER_ORE)
                 .add(ModBlocks.RAW_SILVER_BLOCK)
-                .add(ModBlocks.SILVER_BLOCK);
+                .add(ModBlocks.SILVER_BLOCK)
+                .add(ModBlocks.STEEL_BLOCK);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.SILVER_ORE)
@@ -30,7 +31,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.RAW_SILVER_BLOCK);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
-                .add(ModBlocks.SILVER_BLOCK);
+                .add(ModBlocks.SILVER_BLOCK)
+                .add(ModBlocks.STEEL_BLOCK);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL);
 

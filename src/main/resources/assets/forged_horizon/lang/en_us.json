@@ -3,22 +3,42 @@
   "item.forged_horizon.silver_ingot" : "Silver Ingot",
   "item.forged_horizon.silver_nugget" : "Silver Nugget",
 
+  "item.forged_horizon.iron_coal_mix" : "Iron Coal Mix",
+  "item.forged_horizon.steel_ingot" : "Steel Ingot",
+  "item.forged_horizon.steel_nugget" : "Steel Nugget",
+
   "item.forged_horizon.silver_sword" : "Silver Sword",
   "item.forged_horizon.silver_pickaxe" : "Silver Pickaxe",
   "item.forged_horizon.silver_axe" : "Silver Axe",
   "item.forged_horizon.silver_shovel" : "Silver Shovel",
   "item.forged_horizon.silver_hoe" : "Silver Hoe",
 
+  "item.forged_horizon.steel_sword" : "Steel Sword",
+  "item.forged_horizon.steel_pickaxe" : "Steel Pickaxe",
+  "item.forged_horizon.steel_axe" : "Steel Axe",
+  "item.forged_horizon.steel_shovel" : "Steel Shovel",
+  "item.forged_horizon.steel_hoe" : "Steel Hoe",
+
   "item.forged_horizon.silver_helmet" : "Silver Helmet",
   "item.forged_horizon.silver_chestplate" : "Silver Chestplate",
   "item.forged_horizon.silver_leggings" : "Silver Leggings",
   "item.forged_horizon.silver_boots" : "Silver Boots",
 
+  "item.forged_horizon.steel_helmet" : "Steel Helmet",
+  "item.forged_horizon.steel_chestplate" : "Steel Chestplate",
+  "item.forged_horizon.steel_leggings" : "Steel Leggings",
+  "item.forged_horizon.steel_boots" : "Steel Boots",
+
   "block.forged_horizon.silver_ore" : "Silver Ore",
   "block.forged_horizon.deepslate_silver_ore" : "Deepslate Silver Ore",
   "block.forged_horizon.raw_silver_block" : "Raw Silver Block",
   "block.forged_horizon.silver_block" : "Silver Block",
+  "block.forged_horizon.steel_block" : "Steel Block",
 
-  "itemgroup.forged_horizon" : "Forged Horizon"
+  "itemgroup.forged_horizon.misc" : "FH MISC",
+  "itemgroup.forged_horizon.block" : "FH BLOCKS",
+  "itemgroup.forged_horizon.combat" : "FH COMBAT",
+  "itemgroup.forged_horizon.tools" : "FH TOOLS"
+
 
 }

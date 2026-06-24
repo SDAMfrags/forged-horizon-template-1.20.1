@@ -16,5 +16,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.DEEPSLATE_SILVER_ORE, oreDrops(ModBlocks.DEEPSLATE_SILVER_ORE, ModItems.RAW_SILVER));
         addDrop(ModBlocks.RAW_SILVER_BLOCK);
         addDrop(ModBlocks.SILVER_BLOCK);
+
+        addDrop(ModBlocks.STEEL_BLOCK);
     }
 }
