@@ -8,8 +8,7 @@
 		"SDAMcraft"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/SDAMfrags/forged-horizon-template-1.20.1.git"
 	},
 	"license": "MIT",
 	"icon": "assets/forged_horizon/icon.png",

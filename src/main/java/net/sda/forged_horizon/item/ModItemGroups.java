@@ -11,13 +11,14 @@ import net.sda.forged_horizon.ForgedHorizon;
 import net.sda.forged_horizon.block.ModBlocks;
 
 public class ModItemGroups {
-    public static final ItemGroup ITEM_GROUP = Registry.register(Registries.ITEM_GROUP, new Identifier(ForgedHorizon.MOD_ID, "item"),
+    public static final ItemGroup MISC_GROUP = Registry.register(Registries.ITEM_GROUP, new Identifier(ForgedHorizon.MOD_ID, "misc"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.forged_horizon")).icon(() -> new ItemStack(ModItems.RAW_SILVER)).
                     entries((displayContext, entries) -> {
                         entries.add(ModItems.RAW_SILVER);
                         entries.add(ModItems.SILVER_INGOT);
                         entries.add(ModItems.SILVER_NUGGET);
                         entries.add(ModBlocks.SILVER_ORE);
+                        entries.add(ModBlocks.DEEPSLATE_SILVER_ORE);
                         entries.add(ModBlocks.RAW_SILVER_BLOCK);
                         entries.add(ModBlocks.SILVER_BLOCK);
 

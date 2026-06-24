@@ -18,7 +18,11 @@ import java.util.List;
 import java.util.function.Consumer;
 
 public class ModRecipeProvider extends FabricRecipeProvider {
-    private static final List<ItemConvertible> SILVER_SMELTABLE = List.of(ModItems.RAW_SILVER, ModBlocks.SILVER_ORE);
+    private static final List<ItemConvertible> SILVER_SMELTABLE = List.of(
+            ModItems.RAW_SILVER,
+            ModBlocks.SILVER_ORE,
+            ModBlocks.DEEPSLATE_SILVER_ORE
+    );
 
     private void offerPickaxeRecipe(Consumer<RecipeJsonProvider> exporter, Item result, Item material) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, result)

@@ -21,9 +21,14 @@ public class ModConfigureFeatures {
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
         RuleTest stoneReplacables = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
+        RuleTest deepslateReplacables = new TagMatchRuleTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
 
         List<OreFeatureConfig.Target> overworldSilverOres =
-                List.of(OreFeatureConfig.createTarget(stoneReplacables, ModBlocks.SILVER_ORE.getDefaultState()));
+                List.of(
+                        OreFeatureConfig.createTarget(stoneReplacables, ModBlocks.SILVER_ORE.getDefaultState()),
+                        OreFeatureConfig.createTarget(deepslateReplacables, ModBlocks.DEEPSLATE_SILVER_ORE.getDefaultState())
+                );
+
 
         register(context, SILVER_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldSilverOres, 12));
 
