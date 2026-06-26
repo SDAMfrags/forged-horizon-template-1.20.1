@@ -16,6 +16,10 @@ public class ModItems {
     public static final Item STEEL_INGOT = registerItem("steel_ingot", new Item(new FabricItemSettings()));
     public static final Item STEEL_NUGGET = registerItem("steel_nugget", new Item(new FabricItemSettings()));
 
+    public static final Item RAW_TIN = registerItem("raw_tin", new Item(new FabricItemSettings()));
+    public static final Item TIN_INGOT = registerItem("tin_ingot", new Item(new FabricItemSettings()));
+    public static final Item TIN_NUGGET = registerItem("tin_nugget", new Item(new FabricItemSettings()));
+
     public static final Item SILVER_SWORD = registerItem("silver_sword", new SwordItem(ModToolMaterial.SILVER, 3,
             -2.2f, new FabricItemSettings()));
     public static final Item SILVER_PICKAXE = registerItem("silver_pickaxe", new PickaxeItem(ModToolMaterial.SILVER, 2,

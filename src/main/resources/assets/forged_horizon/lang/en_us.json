@@ -3,6 +3,10 @@
   "item.forged_horizon.silver_ingot" : "Silver Ingot",
   "item.forged_horizon.silver_nugget" : "Silver Nugget",
 
+  "item.forged_horizon.raw_tin" : "Raw Tin",
+  "item.forged_horizon.tin_ingot" : "Tin Ingot",
+  "item.forged_horizon.tin_nugget" : "Tin Nugget",
+
   "item.forged_horizon.iron_coal_mix" : "Iron Coal Mix",
   "item.forged_horizon.steel_ingot" : "Steel Ingot",
   "item.forged_horizon.steel_nugget" : "Steel Nugget",
@@ -33,7 +37,13 @@
   "block.forged_horizon.deepslate_silver_ore" : "Deepslate Silver Ore",
   "block.forged_horizon.raw_silver_block" : "Raw Silver Block",
   "block.forged_horizon.silver_block" : "Silver Block",
+
   "block.forged_horizon.steel_block" : "Steel Block",
+
+  "block.forged_horizon.tin_ore" : "Tin Ore",
+  "block.forged_horizon.deepslate_tin_ore" : "Deepslate Tin Ore",
+  "block.forged_horizon.raw_tin_block" : "Raw Tin Block",
+  "block.forged_horizon.tin_block" : "Tin Block",
 
   "itemgroup.forged_horizon.misc" : "FH MISC",
   "itemgroup.forged_horizon.block" : "FH BLOCKS",

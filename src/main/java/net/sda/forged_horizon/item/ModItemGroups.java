@@ -22,6 +22,10 @@ public class ModItemGroups {
                         entries.add(ModItems.STEEL_INGOT);
                         entries.add(ModItems.STEEL_NUGGET);
 
+                        entries.add(ModItems.RAW_TIN);
+                        entries.add(ModItems.TIN_INGOT);
+                        entries.add(ModItems.TIN_NUGGET);
+
                     }).build());
 
     public static final ItemGroup BLOCK_GROUP = Registry.register(Registries.ITEM_GROUP, new Identifier(ForgedHorizon.MOD_ID, "block"),
@@ -34,6 +38,11 @@ public class ModItemGroups {
                         entries.add(ModBlocks.SILVER_BLOCK);
 
                         entries.add(ModBlocks.STEEL_BLOCK);
+
+                        entries.add(ModBlocks.TIN_ORE);
+                        entries.add(ModBlocks.DEEPSLATE_TIN_ORE);
+                        entries.add(ModBlocks.RAW_TIN_BLOCK);
+                        entries.add(ModBlocks.TIN_BLOCK);
 
                     }).build());
 

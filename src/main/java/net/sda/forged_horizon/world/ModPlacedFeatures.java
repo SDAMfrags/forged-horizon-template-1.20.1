@@ -16,6 +16,7 @@ import java.util.List;
 
 public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> SILVER_ORE_PLACED_KEY = registryKey("silver_ore_placed");
+    public static final RegistryKey<PlacedFeature> TIN_ORE_PLACED_KEY = registryKey("tin_ore_placed");
 
     public static void bootstrap(Registerable<PlacedFeature> context) {
         var configuredFeatureRegistryLookUp = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
@@ -23,6 +24,12 @@ public class ModPlacedFeatures {
         register(context, SILVER_ORE_PLACED_KEY, configuredFeatureRegistryLookUp.getOrThrow(ModConfigureFeatures.SILVER_ORE_KEY),
                 ModOrePlacement.modifiersWithCount( 12 //Veins per chunk
                         , HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80))));
+
+        register(context, TIN_ORE_PLACED_KEY, configuredFeatureRegistryLookUp.getOrThrow(ModConfigureFeatures.TIN_ORE_KEY),
+                ModOrePlacement.modifiersWithCount( 12 //Veins per chunk
+                        , HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80))));
+
+
     }
 
     public static RegistryKey<PlacedFeature> registryKey(String name) {

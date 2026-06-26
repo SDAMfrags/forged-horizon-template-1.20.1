@@ -18,6 +18,8 @@ import java.util.List;
 
 public class ModConfigureFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> SILVER_ORE_KEY = registryKey("silver_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> TIN_ORE_KEY = registryKey("tin_ore");
+
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
         RuleTest stoneReplacables = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
@@ -29,8 +31,15 @@ public class ModConfigureFeatures {
                         OreFeatureConfig.createTarget(deepslateReplacables, ModBlocks.DEEPSLATE_SILVER_ORE.getDefaultState())
                 );
 
+        List<OreFeatureConfig.Target> overworldTinOres =
+                List.of(
+                        OreFeatureConfig.createTarget(stoneReplacables, ModBlocks.TIN_ORE.getDefaultState()),
+                        OreFeatureConfig.createTarget(deepslateReplacables, ModBlocks.DEEPSLATE_TIN_ORE.getDefaultState())
+                );
+
 
         register(context, SILVER_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldSilverOres, 12));
+        register(context, TIN_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldTinOres, 12));
 
     }
 

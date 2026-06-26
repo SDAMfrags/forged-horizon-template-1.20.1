@@ -27,6 +27,12 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     private static final List<ItemConvertible> IRON_COAL_SMELTABLE = List.of(
             ModItems.IRON_COAL_MIX
     );
+    private static final List<ItemConvertible> TIN_SMELTABLE = List.of(
+            ModItems.RAW_TIN,
+            ModBlocks.TIN_ORE,
+            ModBlocks.DEEPSLATE_TIN_ORE
+
+    );
 
     private void offerPickaxeRecipe(Consumer<RecipeJsonProvider> exporter, Item result, Item material) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, result)
@@ -142,12 +148,19 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         offerBlasting(exporter, IRON_COAL_SMELTABLE, RecipeCategory.MISC, ModItems.STEEL_INGOT, 1f, 200, "steel");
 
+        offerSmelting(exporter, TIN_SMELTABLE, RecipeCategory.MISC, ModItems.TIN_INGOT, 1f, 200, "tin");
+        offerBlasting(exporter, TIN_SMELTABLE, RecipeCategory.MISC, ModItems.TIN_INGOT, 1f, 100, "tin");
+
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.STEEL_INGOT,
                 RecipeCategory.DECORATIONS, ModBlocks.STEEL_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.SILVER_INGOT,
                 RecipeCategory.DECORATIONS, ModBlocks.SILVER_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.RAW_SILVER,
                 RecipeCategory.DECORATIONS, ModBlocks.RAW_SILVER_BLOCK);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.TIN_INGOT,
+                RecipeCategory.DECORATIONS, ModBlocks.TIN_BLOCK);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.RAW_TIN,
+                RecipeCategory.DECORATIONS, ModBlocks.RAW_TIN_BLOCK);
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.SILVER_INGOT)
                 .pattern("NNN")
                 .pattern("NNN")
@@ -182,6 +195,20 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.STEEL_NUGGET, 9)
                 .input(ModItems.STEEL_INGOT)
                 .criterion(hasItem(ModItems.STEEL_INGOT), conditionsFromItem(ModItems.STEEL_INGOT))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.TIN_INGOT)
+                .pattern("NNN")
+                .pattern("NNN")
+                .pattern("NNN")
+                .input('N', ModItems.TIN_NUGGET)
+                .criterion(hasItem(ModItems.TIN_NUGGET),
+                        conditionsFromItem(ModItems.TIN_NUGGET))
+                .offerTo(exporter,
+                        new Identifier(ForgedHorizon.MOD_ID, "tin_ingot_from_nuggets"));
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.TIN_NUGGET, 9)
+                .input(ModItems.TIN_INGOT)
+                .criterion(hasItem(ModItems.TIN_INGOT), conditionsFromItem(ModItems.TIN_INGOT))
                 .offerTo(exporter);
 
         offerSwordRecipe(exporter, ModItems.SILVER_SWORD, ModItems.SILVER_INGOT);
